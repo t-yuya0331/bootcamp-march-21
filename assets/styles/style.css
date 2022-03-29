@@ -1,0 +1,60 @@
+/* body{
+  background-color: grey;
+} */
+/* Universal Selectors */
+*{
+  color: red;
+}
+
+/* element selectors */
+
+p{
+  background-color: tomato;
+}
+h3{
+  background-color: teal;
+}
+
+/* class selector */
+.shu{
+  /* background-color: goldenrod; */
+  font-size: 10px;
+
+}
+.kaito{
+  font-size: 50px;
+}
+/* idにcssを適用する場合は 「#（idの中身）」を使用するが1id=1elementにする special styling のため*/
+#logo-name{
+  background-color: aqua;
+}
+#anri{
+font-size: 60px;
+}
+/* span{
+  font-size: 60px;
+} */
+
+/* and(,)selectors */
+a,h4{
+  background-color: yellow;
+}
+
+/* descendant (space) selector divのchildのh2などにcssを適用させる時はスペースを開ける*/
+div ol li ol li,ul span{
+  background-color: grey;
+}
+/* hierarchy or specificity */
+#joe{
+  background-color: seagreen;
+}
+.yuya{
+  background-color: brown !important;
+}
+
+h5{
+  background-color: green;
+}
+h5{
+  background-color: blueviolet !important;
+}

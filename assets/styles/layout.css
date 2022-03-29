@@ -1,0 +1,147 @@
+/* reset declaration */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.header{
+  border: 4px solid red;
+  padding: 20px;
+}
+
+.header h1{
+  /* border: 2px dashed green; */
+  float: left;
+}
+
+.header .sns{
+  /* border: 2px dashed purple; */
+  float: right;
+  margin-top: 1em;
+  
+
+}
+.header a{
+  border: 1px solid red;
+  /* display: inline-block; */
+  display: block;
+}
+.header p{
+  /* border: 2px dashed black; */
+  clear: both;
+}
+
+/* nav */
+.nav{
+  border: 4px solid blue;
+  overflow: auto;
+  padding: 20px;
+}
+.nav img{
+  border: 2px dashed red;
+  float: left;
+  display: none;
+}
+.nav ul{
+  border: 2px dashed green;
+  float: right;
+  
+}
+.nav ul li{
+  border: 2px solid black;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* section */
+.section{
+  border: solid 4px red;
+  overflow: auto;
+}
+.article{
+  border: 2px dashed green;
+  width: 70%;
+  float: left;
+  height: 500px;
+  padding: 20px;
+}
+.static{
+  border: 1px solid yellow;
+  width: 80px;
+  height: 50px;
+  position: static;
+  left: 100px;
+  /* static でnormal positionだから動かない */
+}
+.relative{
+  background-color:  teal;
+  width: 80px;
+  height: 50px;
+  position: relative;
+  left: 130px;
+  top: 150px;
+  z-index: 5;
+}
+.fixed{
+  width: 80px;
+  height: 50px;
+  position: fixed;
+  right:30px;
+  bottom:40px;
+  background-color: purple;
+  z-index: 10;
+}
+.absolute{
+  background-color:  green;
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}
+.relative-2{
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  background-color: darkkhaki;
+  z-index: 2;
+  
+}
+
+
+.sidebar{
+border:2px dashed blue;
+width: 30%;
+float: left;
+padding: 20px;
+}
+/* position properties 
+    values:static
+            relative
+            fixed
+            absolute
+    offset properties (movement)
+        left:0;
+        top:0;
+        right:0;
+        bottom:
+*/
+/* footer */
+.footer{
+  text-align: center;
+}
+.footer .sns-footer a{
+  /* display: block;
+  margin: auto */
+  border: 2px solid black;
+  width: 100px;
+  padding: 10px;
+
+
+
+}

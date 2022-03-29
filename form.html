@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form elements</title>
+  <!-- internal css -->
+  <style>
+    h1{
+      background-color: salmon;
+    }
+    p{
+      color: red;
+    }
+  </style>
+  <!-- external css -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+  <h1>Form Elements</h1>
+  <!-- inline css -->
+  <form action="https://kredo.jp" method="post" style="background-color: aqua;">
+    <label for="fullname">Full name:</label>
+    <input type="text" name="fullname" id="fullname" placeholder="Last Name, First Name" required maxlength="20" minlength="3">
+    <label for="email-address">Email Address: </label>
+    <input type="email" name="email-address" id="e-mail-address" placeholder="youremail@yahoo.com">
+    <!-- 飛んだ先にパスワードが表示される formのmethod=get からmethod=postにすることで非表示になる-->
+<!--     
+    <label for="">password:</label>
+    <input type="password"name="password" placeholder="Type your password here.">
+    <button>send</button> -->
+    
+    <label for="">password:</label>
+    <input type="password" placeholder="Type your password here.">
+    
+
+    <label for="">Birth Date</label>
+    <input type="date" name="birthdate" id="birthday">
+    
+    
+    <label for="">Age:</label>
+    <input type="number" name="age" id="age" placeholder="above 18" min="18" max="60">
+    
+    <div>
+      <p>Choose your gender:</p>
+      <input type="radio" name="gender" value="male" id="male" >
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" value="lgbt" id="lgbt">
+      <label for="lgbt">Lgbt</label>
+    </div>
+    <div>
+      <p>Choose your favorite food:</p>
+      <input type="checkbox" name="food" value="sushi" id="sushi">
+      <label for="sushi">Sushi</label>
+      <input type="checkbox" name="food" value="ramen">
+      <label for="ramen">Ramen</label>
+      <input type="checkbox" name="food" value="curry" id="curry" >
+      <label for="curry">Curry</label>
+      
+    </div>
+    
+    <br>
+    <label for="">Select your car:</label>
+    <select name="car" id="car">
+      <!-- optionタグの中でvalue=hidden にするとplaceholderと同じ使い方ができる -->
+      <option value="hidden">Select Car</option>
+      <option value="honda-civic">Honda Civic </option>
+      <option value="ferrari">Ferrari</option>
+      <option value="Nissan">Nissan</option>
+      <option value="mazda">Mazda</option>
+    </select>
+    
+    <br>
+    <label for="">comment:</label>
+    <textarea name="comment" id="comennt" cols="30" rows="10" placeholder="Type your comments here."></textarea>
+    <br>
+    <!-- 画像を入れる時に使う -->
+    <label for="">Upload photo:</label>
+    <input type="file" name="photo" id="photo">
+    
+    <input type="submit" name="submit" value="OK">
+    
+    <input type="image" src="assets/images/gar.jpg" width="100px" height="50px" name="submit">
+    
+    <button type="submit" name="submit" >send</button>
+  </form>
+  </body>
+  </html>

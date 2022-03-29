@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Elements</title>
+  <link rel="stylesheet" href="assets/styles/tables.css">
+</head>
+<body>
+  <h1>Table Elements</h1>
+  <h2>Sample Table using th</h2>
+  <!-- spreadsheet(表)の作り方 -->
+  <table border ='1' width="'300px" class="table-1"
+    <tr>
+      <th>title 1</th>
+      <th>title 2</th>
+      <th rowspan="3">title 3</th>
+
+    </tr>
+    <tr>
+      <th>4</th>
+      <th></th>
+      <!-- <th>title 6</th> -->
+    </tr>
+    <tr>
+      <th></th>
+      <th>title 8</th>
+      <!-- <th>title 9</th> -->
+    </tr>
+    <h2>Sample table using td</h2>
+    <table border= "1" width="300px" class="table-2">
+      <br>
+      <tr>
+        <td colspan="3" >data 1</td>
+        <!-- <td></td>
+        <td></td> -->
+      </tr>
+      <tr>
+        <td >data 4</td>
+        <td></td>
+        <td>data 6</td>
+      </tr>
+      <tr>
+        <td >data 7</td>
+        <td>data 8</td>
+        <td>data 9</td>
+      </tr>
+    </table>
+    <!-- td*3 複数表示する時に役に立つ書き方 -->
+
+  </table>
+
+<h2>Sample Table using th and td</h2>
+<table border="1" width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Email Address</th>
+    <th>Age</th>
+    <th>Home Address</th>
+  </tr>
+  <tr>
+    <td>John Smith</td>
+    <td>johnsmith@gmail.com</td>
+    <td>67</td>
+    <td>silicon valley</td>
+  </tr>
+  <tr>
+    <td>Adam Kent</td>
+    <td>adam@hotmail.com</td>
+    <td>45</td>
+    <td>Nebraska</td>
+  </tr>
+</table>
+
+<h2>sample table using colspan</h2>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <!-- セルの結合colspan 何個結合するのかを書く -->
+    <th colspan="2">Content Numbers</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Steve wonder</td>
+    <td>39393939</td>
+    <td>393939393939</td>
+  </tr>
+  <tr>
+    <td>John Adams</td>
+    <td>39393939</td>
+    <td>39393</td>
+  </tr>
+  
+  <h2>sample table using rowspan</h2>
+  <table border="1">
+<tr>
+  <th>Name</th>
+  <th>Steve Job</th>
+  <th>Mark Twain</th>
+</tr>
+<tr>
+  <th rowspan="2">contact number</th>
+  <td>393939</td>
+  <td>494949</td>
+</tr>
+<tr>
+  <!-- <th></th> -->
+  <td>393939</td>
+  <td>494949</td>
+</tr>
+  </table>
+</table>
+<h2>sample table using grouping table content</h2>
+<table border="1">
+  <thead>
+    <tr class=""thead-title>
+      <th>title 1</th>
+      <th>title 2</th>
+      <th>title 3</th>
+    </tr>
+    <tr>
+      <th>subtitle 1</th>
+      <th>subtitle 2</th>
+      <th>subtitle 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data 1</td>
+      <td>data 2</td>
+      <td>data 3</td>
+    </tr>
+    <tr>
+      <td>data 4</td>
+      <td>data 5</td>
+      <td>data 6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>total1</th>
+      <th>total2</th>
+      <th>total3</th>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>

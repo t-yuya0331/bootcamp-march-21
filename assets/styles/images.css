@@ -1,0 +1,22 @@
+/* img */
+img{
+  width: 400px;
+  height: 400px;
+}
+.photo-1{
+  width: 100%;
+}
+p{
+  background-image: url(../images/junk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: contain; */
+/* background-size: 100px 100px; */
+background-position: center center;
+background-attachment: fixed;
+color: yellow;
+
+}
+.photo{
+  background: aqua url(../images/junk.jpg) no-repeat fixed center;background-size: cover;
+}
